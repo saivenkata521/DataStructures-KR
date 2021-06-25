@@ -34,7 +34,7 @@ void LDR_LRD_DLR( bstptr T ){
 
 	 if( T == NULL )
 		return;
-	//Uncomment the bellow line inorder to implement DLR , similary for others i.e, LDR and LRD
+	//Uncomment the below line inorder to implement DLR , similary for others i.e, LDR and LRD
 	//cout<<"\n one "<<T->data<<" "; DLR
 	LDR_LRD_DLR( T -> lc );
 	//cout<<"\n Two "<<T->data<<" "; LDR
