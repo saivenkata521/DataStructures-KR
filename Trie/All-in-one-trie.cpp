@@ -165,8 +165,8 @@ int main(){
 	
 	tptr T = new(tnode);
 
-	cout<<"Choose a option to proceed \n\n";
-	cout<<"1. Already existed vector<string> into the trie insertion \n";
+	cout<<"Choose a option to proceed (choose option is manditory at first input , inorder to use option otherthan 1) \n\n";
+	cout<<"1. Insert Strings into the trie  and to create \n";
 	cout<<"2. Search a Word in trie \n";
 	cout<<"3. Get count and print strings having given string as prefix \n";
 	cout<<"4. Display strings in the trie \n";
