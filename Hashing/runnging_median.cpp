@@ -77,7 +77,7 @@ int main(){
 
 /*
    Note:
-	   The following simple code inorder to insert is from leetcode discussion community by LeJas
+	   The following simple code inorder to insert is taken from leetcode discussion community written by LeJas
 	   Credits : LeJas
 	   Link    : https://leetcode.com/problems/find-median-from-data-stream/discuss/74163/My-C%2B%2B-priority_queue-based-solution-(140-ms)
    
