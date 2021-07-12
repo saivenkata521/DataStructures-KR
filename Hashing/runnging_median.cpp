@@ -74,3 +74,29 @@ int main(){
      cout<<( minHeap.top() + maxHeap.top() )/2;
   
 }
+
+/*
+   Note:
+	   The following simple code inorder to insert is from leetcode discussion community by LeJas
+	   Credits : LeJas
+	   Link    : https://leetcode.com/problems/find-median-from-data-stream/discuss/74163/My-C%2B%2B-priority_queue-based-solution-(140-ms)
+   
+   void addNum(int num) {
+        if(firstQ.empty() || (firstQ.top()>num)) firstQ.push(num); // if it belongs to the smaller half
+        else secQ.push(num); 
+        
+        // rebalance the two halfs to make sure the length difference is no larger than 1
+        if(firstQ.size() > (secQ.size()+1))
+        {
+            secQ.push(firstQ.top());
+            firstQ.pop();
+        }
+        else if(firstQ.size()+1<secQ.size())
+        {
+            firstQ.push(secQ.top());
+            secQ.pop();
+        }
+    }
+
+
+*/
