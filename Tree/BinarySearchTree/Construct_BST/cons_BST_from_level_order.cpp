@@ -41,9 +41,14 @@ void traversal( bstptr T ){
 
 bstptr createBST( vector<int> v,  int n ){
 	
-	queue<rangeNode> Q; int i = 0;
-	bstptr T = new bstnode(v[i]);
 	
+	if( n == 0 ) return NULL;
+	
+	queue<rangeNode> Q; 
+	int i = 0;
+	
+	
+	bstptr T = new bstnode(v[i]);
 	if( n == 1 ) return T;
 	
 	Q.push({T,INT_MIN,v[i]}); Q.push({T,v[i],INT_MAX});
@@ -91,7 +96,6 @@ int main(){
 	
 	//vector contains level order to the bst
 	vector<int> v{ 7,4,12,3,6,8,1,5,10 };
-	
 	//funtion to create BST	
 	bstptr T = createBST( v , v.size() );
 
