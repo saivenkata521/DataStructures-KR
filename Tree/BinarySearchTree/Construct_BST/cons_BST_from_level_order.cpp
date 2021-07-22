@@ -43,6 +43,9 @@ bstptr createBST( vector<int> v,  int n ){
 	
 	queue<rangeNode> Q; int i = 0;
 	bstptr T = new bstnode(v[i]);
+	
+	if( n == 1 ) return T;
+	
 	Q.push({T,INT_MIN,v[i]}); Q.push({T,v[i],INT_MAX});
 	
 	while( !Q.empty() ){
